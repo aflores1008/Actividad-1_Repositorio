@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+ .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 20px;
+    font-family: 'nunito', sans-serif;
+    background-color:white;
+ }
+ 
+ .card-container {
+    display: flex;
+    width: 1000px;
+    height: auto;
+    background:  #dbe2ef;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px 2px  rgba(0, 0, 0, .2);
+ }
+ .header{
+    border-right: 1px solid #ddd;
+ }
+ 
+ .descripcion{
+    background: #fbfbfb;
+ }
+ 
+ .header,.descripcion{
+    padding: 300px;
+    text-align: center;
+ }
+ 
+ .header a{
+    position: relative;
+    display:block ;
+ }
+ .header img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px  rgba(0,0,0,.06);
+    margin: 5px 10px;
+    transition: .2s; 
+ }
+ .header a:hover img{
+    box-shadow: 0 0 0 12px  rgba(0,0,0,.1);
+ }
+ 
+ .header h2{
+    float: right;
+    width: 50%;
+      color: black;
+      margin: 10px 50px;
+    
+ }
+ 
+ .header h4{
+    margin-bottom: 100px; 
+     
+ }
+ 
+ .descripcion{
+    position: relative;
+ }
+ .descripcion p{
+ margin: 50px 40px;
+ }
+ .mainmenubtn {
+    background-color: #dbe2ef;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 10px;
+    font-family: cursive;
+    
+ }
+ .mainmenubtn:hover {
+    background-color:  rgba(0, 0, 0, .2);
+    color: black;
+ }
+ 
+ .dropdown {
+    position: relative;
+    display: inline-block;
+ }
+ 
+ .dropdown-child {
+    display: none;
+    background-color:transparent;
+    min-width: 200px;
+ }
+ 
+ .dropdown:hover .dropdown-child {
+    display: block;
+ }
+ 
+ ul li {
+    list-style: none;
+    display: inline-block;
+    margin: .5em .2em;
+    padding: 0 15px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: white;
+    background:  #314652;
+    width: 30px;
+    height: 30px;
+    line-height: 30px !important;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    
+  }
+  
+  ul li a:hover {
+    transform: scale(1.2);
+  }
+  
+ 
+  @media (max-width:640px){
+     .card-container{
+         display: block;
+        width: 450px;
+     }
+  }
+ 
+  .header{
+     padding: 30px 40px 80px 30px;
+     border: none;
+  }
+ 
+  .descripcion{
+     padding: 30px 40px 30px 100px;
+   
+  }
+ 
+  .header h4{
+     margin: 0px;
+  }
+ 
