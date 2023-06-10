@@ -1,3 +1,7 @@
+//Declaramos variables
+var operandoa;
+var operandob;
+var operacion;
 function init(){
     //variables
     var resultado = document.getElementById('resultado');
