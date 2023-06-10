@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <title>Card Perfil</title>
+<meta charset="UTF-8">
+<title>Calculadora con JavaScript</title>
+<link type="text/css" href="style.css" rel="stylesheet">
 </head>
-<body> 
+<body onload="init();">
+  <table class="calculadora">
+    <tr>
+      <td colspan="4"><span id="resultado"></span></td>
+    </tr>
+    <tr>
+     
+      <td><button id="reset">C</button></td>
+      <td><button id="cero">0</button></td>
+      <td><button id="suma">+</button></td>
+      <td><button id="resta">-</button></td>
+     
+    </tr>
+    <tr>
+      <td><button id="siete">7</button></td>
+      <td><button id="ocho">8</button></td>
+      <td><button id="nueve">9</button></td>
+      <td><button id="division">/</button></td>
+    </tr>
+    <tr>
+      <td><button id="cuatro">4</button></td>
+      <td><button id="cinco">5</button></td>
+      <td><button id="seis">6</button></td>
+      <td><button id="multiplicacion">*</button></td>
+    </tr>
+    <tr>
+      <td><button id="uno">1</button></td>
+      <td><button id="dos">2</button></td>
+      <td><button id="tres">3</button></td>
+      <td><button id="igual">=</button></td>
+     
+    </tr>
+  
+    </table>
 
-    <div class="container">
-      <div class="card-container">
-        <div class="header">
-        <a href="#">
-          <img src="" alt="">
-        </a>
-        <h2>Adriana Flores </h2>
-        <h4>Estudiante de Tecnologías de la información y la comunicación</h4>
-      </div>      
-      <div class="descripcion">
-        <p>Hola, mi nombre es Adriana nací en Portoviejo el 3 de agosto del 2002, mi infancia fue 
-          muy bonita, tengo dos hermanos con que comparto muchas cosas.
-          Estudio en la Universidad Técnica de Manabí, donde actualmente curso el sexto semestre de 
-            Tecnologías de la información y la comunicación. 
-            Estoy muy agradecida de mis padres por la educación que 
-             me están dando y por supuesto a DIOS por regalarme una familia bonita.</p>
-             <div class="dropdown">
-              <!-- <li class="even"> -->
-              <button class="mainmenubtn">CONTACT ME</button>
-              <!-- <li class="odd"> -->            
-              <div class="dropdown-child">
-              <!-- <li class="even"> -->
-             <ul>
-              <li><a href="https://es-la.facebook.com/" class="fa fa-facebook"></a></li>
-              <li><a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D" class="fa fa-twitter"></a></li>
-              <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
-              <li><a href="https://www.youtube.com/" class="fa fa-youtube"></a></li>
-            </ul>      
-          </div> 
-         </div>
-      </div>
-    </div>
-    
-    </body>
+</table>
+<script src="funcionalidad.js"></script>
+</body>
 </html>
